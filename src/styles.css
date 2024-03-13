@@ -1,0 +1,498 @@
+:root{
+    --mainbackgroundcolor: #BFCBB7;
+    --maincolor: #528268;
+    --pink: #ffffff;
+  --pink-dark:  #ffffff;
+  --tape-gray: #dbd8be;
+  --tape-edge-gray: #b7b49d;
+  --transparent: rgba(255, 255, 255, 0);
+  --miantextstyle: "Over the Rainbow",  serif;
+  --maindescritiontext:'Courier New', monospace;
+}
+.pink {
+  --paper-color: var(--pink);
+  --paper-dark: var(--pink-dark);
+  --shadow-size: 1px;
+  --transparent: rgba(236, 178, 186, 0);
+}
+.nav-item{
+    /* font-family: "Over the Rainbow", cursive; */
+    font-family: comic 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 30px;
+    text-align: center;
+    
+
+
+}
+.nav-item a{
+    
+    color: #293B2E;
+}
+.navbar{
+    z-index:6;
+    /* color: #293B2E; */
+    position: fixed;
+    
+}
+.nav-link{
+    color:  #293B2E;
+}
+
+.container-fluid{
+    padding-top: 30px;
+    
+
+    background-color: #FAFAFA;
+    text-align: center;
+    position: fixed;
+   
+    /* padding-left: 80px; */
+}
+.main-container{
+    padding-top: 20px;
+    text-align: center;
+    background-color: var(--mainbackgroundcolor);
+    margin-bottom: auto;
+    min-height: 1000px;
+    /* padding-bottom: 100px; */
+}
+.introduction{
+      background-image: url('example_img_girl.jpg');
+  background-repeat: no-repeat;
+    font-family: 'Courier New', monospace;
+  position: relative;
+  background: linear-gradient(
+      to bottom right,
+      var(--paper-dark),
+      20%,
+      var(--transparent)
+    ),
+    var(--paper-color);
+    max-width: 70%;
+  min-width: 300px;
+  min-height: 130px;
+  /* font-size: 2rem; */
+  box-shadow: var(--shadow-size) var(--shadow-size) 2px var(--paper-dark);
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
+    padding-top: 80px;
+    /* padding-bottom: 80px; */
+}
+
+/* .introduction::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      var(--transparent),
+      50%,
+      var(--paper-dark),
+      51%,
+      var(--transparent)
+    ),
+    linear-gradient(
+      to right,
+      var(--transparent),
+      50%,
+      var(--paper-dark),
+      51%,
+      var(--transparent)
+    );
+} */
+.tape-section {
+  position: absolute;
+  width: 100%;
+}
+.tape-section:first-of-type {
+  top: 0;
+}
+
+.tape-section:last-of-type {
+  bottom: 0;
+}
+
+.tape-section::before,
+.tape-section::after {
+  content: "";
+  width: 10vmin;
+  height: 4vmin;
+  position: absolute;
+  background-color: var(--tape-gray);
+  opacity: 0.5;
+  border-right: 1px dotted var(--tape-edge-gray);
+  border-left: 1px dotted var(--tape-edge-gray);
+}
+
+.tape-section:last-of-type::after {
+  transform: rotate(-45deg);
+  right: -4vmin;
+  top: -3vmin;
+}
+
+.tape-section:first-of-type::before {
+  transform: rotate(-45deg);
+  left: -4vmin;
+}
+
+.tape-section:first-of-type::after {
+  transform: rotate(45deg);
+  right: -4vmin;
+  top: 0;
+}
+
+.tape-section:last-of-type::before {
+  transform: rotate(45deg);
+  left: -4vmin;
+  bottom: 0;
+}
+.tape-section {
+  position: absolute;
+  width: 100%;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#name{
+    color: var(--maincolor);
+    font-family: var(--miantextstyle);
+    /* font-family: "Over the Rainbow",  serif; */
+    font-size: 60px;
+}
+#web-developer{
+    color: var(--maincolor);
+    padding-bottom: 20px;
+    font-size: 16px;
+} 
+#intro{
+    color: var(--maincolor);
+    font-size: 20px;
+    margin-right: 80px;
+}
+#contactme-button{
+    text-decoration: none;
+   
+    color: #ffffff;
+    background-color: #345c40;
+    /* max-width: 100px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    margin: auto;
+    /* margin-left: 410px; */
+    
+}
+#contactme-button:hover{
+  
+  text-decoration:underline
+}
+.app-link{
+    text-decoration: none;
+    /* list-style: none; */
+    color: #040707a0;
+    background-color: #74BCB8;
+    color: #FAFAFA;
+    /* max-width: 100px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    margin: auto;
+}
+/* .container{
+    display: flex;
+   
+} */
+.mb-2{
+     font-family: "Over the Rainbow",  serif;
+}
+.logo{
+    padding-top: 20%;
+    max-width: 10%;
+}
+.descriptionapp{
+    padding-top: 10%;
+    
+    font-family: var(--maindescritiontext) ;
+}
+.container{
+    padding-bottom: 130px;
+    padding-top: 40px;
+    border-bottom: 1px solid #74BCB7;
+}
+.bi-house{
+    color: #2d4835;
+}
+.flip-card {
+    /* z-index:auto; */
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; 
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    /* z-index:auto; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* padding-top: 50%; */
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    /* z-index:auto; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* -webkit-backface-visibility: hidden; Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-fronts {
+    /* z-index:auto; */
+    /* max-width: 100px; */
+  background-color: rgb(255, 254, 254);
+  color: black;
+}  
+
+/* Style the back side */
+.flip-card-back {
+    /* z-index:auto; */
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* //////////////////////about me//////////////// */
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Petemoss&display=swap");
+.mainaboutmecontainer{
+    background-color: var(--mainbackgroundcolor);
+    overflow: hidden;
+}
+* {
+	box-sizing: border-box;
+	font-family: "Cinzel", serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	margin: 0;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	background-color: var(--mainbackgroundcolor);
+}
+#book-title{
+    z-index: auto;
+    font-family: var(--miantextstyle);
+    color: #293B2E;
+    padding-top: 5%;
+}
+
+.book {
+    z-index: auto;
+	--book-height: 100vh;
+	--book-ratio: 1.4;
+}
+
+.book > div {
+    z-index: 1;
+	height: var(--book-height);
+	width: calc(var(--book-height) / var(--book-ratio));
+	overflow: auto;
+	/* background-image: url(img/woman-working-laptop-office-vector-illustration_760443-550.avif);
+    background-image: repeat-y; */
+
+	transform: scale(0.9);
+	border-radius: 6px;
+	transform-origin: left;
+}
+
+.book-cover {
+    z-index: auto;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	position: absolute;
+	z-index: 9;
+	text-align: center;
+    /* background-color: pink; */
+    background-image: url(../img/cover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+	color: white;
+	transition: transform 2s;
+}
+
+.book-cover::before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	right: 20px;
+	top: 0;
+	bottom: 0;
+	background-color: var(--maincolor);
+}
+
+h1 {
+	font-family: "Petemoss", cursive;
+	font-size: 98px;
+	font-weight: 300;
+	color: #dbd75d;
+}
+
+h2 {
+	font-size: 16px;
+}
+
+.separator {
+	--separator-size: 8px;
+	width: var(--separator-size);
+	height: var(--separator-size);
+	background-color: #dbd75d;
+	margin: 50px auto 60px auto;
+	border-radius: 50%;
+	position: relative;
+}
+
+.separator::after,
+.separator::before {
+	content: "";
+	position: absolute;
+	width: 12px;
+	background-color: white;
+	height: 2px;
+	top: calc(50% - 1px);
+}
+
+.separator::after {
+	left: 15px;
+}
+
+.separator::before {
+	right: 15px;
+}
+
+.book-content {
+	transform: scale(0.9) translateY(30px);
+	background-color: white !important;
+	transition: all 0.3s 1s;
+    font-family: var(--maindescritiontext);
+    text-align: center;
+    font-size: x-large;
+    
+}
+
+.book-content h3,
+.book-content p {
+    
+	opacity: 0;
+	transition: all 0.3s 0.3s;
+}
+
+h3 {
+	padding: 30px;
+}
+
+p {
+  /* padding: auto; */
+	padding: 0px 30px 10px 30px;
+	text-align: justify;
+	font-size: 14px;
+}
+
+.book-cover > div {
+	transition: opacity 0s 0.6s;
+}
+
+.book:hover > .book-cover {
+	transform: rotateY(180deg) scale(0.9);
+}
+
+.book:hover > .book-cover > div {
+	opacity: 0;
+}
+
+.book:hover > .book-content {
+	transform: scale(0.9) translateY(0px);
+}
+
+.book:hover > .book-content h3,
+.book:hover > .book-content p {
+	opacity: 1;
+}
+.link{
+    color: #FAFAFA;
+    padding : 0 30px 0 30px;
+    /* padding-top: 20%; */
+    /* max-width: 20px; */
+}
+/* .contact-container{
+    text-align: center;
+    background-color: var(--mainbackgroundcolor);
+} */
+.contactheather{
+   
+    color: var(--maincolor);
+    font-family: var(--maindescritiontext);
+}
+#contactme{
+    font-size: medium;
+    font-weight:bold;
+    font-family: var(--maindescritiontext);
+    padding-bottom: 8%;
+}
+/* 
+/* .technologies-Iknow{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 5%;
+    margin: auto;
+    /* background-color: #345c40; */
+    /* max-width: 60%; */
+    /* padding-left: 30%; */
+    /* background-color:#F4F4F4; */
+/* }  */ 
+.tech{
+    max-width: 80px;
+    /* color: #FAFAFA; */
+    
+}
+.extrainfo{
+    color: #FAFAFA;
+}
+
